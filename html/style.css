@@ -140,10 +140,7 @@
     margin-right: 30px;
 }
 
-
-.fa-solid:hover,
-.a-gamepad:hover {
+.fa-solid:hover , .fa-gamepad:hover{
     color: red;
-    transition: 0.8s;
+    transition: 0.5s;
 }
-
