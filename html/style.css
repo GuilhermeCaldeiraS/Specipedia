@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 
 * {
+    list-style: none;
     font-family: "Lexend", sans-serif;
     margin: 0;
     padding: 0;
@@ -90,12 +91,59 @@
     /*alinha os textos no centro ou na altura desejada*/
     color: white;
     /*cor dos textos*/
-    font-size: 2rem;
+    font-size: 1.3rem;
     /*tamanho da letra dentro da caixa*/
+    min-width: 299px;
     padding: 1rem;
-    /*preenchimento da caixa*/
-    height: 22rem; /*altura da caixa utilizando o REM*/
-    min-height: 299px;
+    height: 16rem;
+    width: 25%;
+}
 
+.ul-div1 a {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 4px;
+    font-size: 1rem;
+    border-radius: 5px;
+    /*arredondamento da borda*/
+
+}
+
+.ul-div1 li {
+    margin: 5px 5px;
+    /*alterando os 4 lados externos do elementos, primeiro valor é superior e inferior e o segundo valor é os laterais esquerda e direita*/
+
+}
+
+
+
+.div-02 {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    gap: 50px;
+    flex-direction: row;
+    min-width: 299px;
+    padding: 1rem;
+    height: 16rem;
+    width: 25%;
+    background-repeat: no-repeat;
+    background: linear-gradient(90deg, rgba(42, 123, 155, 0.212) 0%, rgba(87, 199, 134, 0.295) 50%, rgba(237, 221, 83, 0.37) 100%), url(../imagens/Dark\ Souls\ Bonfire\ GIF.gif)
+}
+
+.fa-solid,
+.a-gamepad {
+    color: white;
+    font-size: 1.3rem;
+    margin-right: 30px;
+}
+
+
+.fa-solid:hover,
+.a-gamepad:hover {
+    color: red;
+    transition: 0.8s;
 }
 
