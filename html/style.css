@@ -6,7 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /*Evita que os elementos aumente de tamanho inesperadamente fecilitando o controle de responsividade*/
+    /*Evita que os elementos aumente de tamanho inesperadamente facilitando o controle de responsividade*/
 }
 
 /* personalização do header */
@@ -35,7 +35,7 @@
 
 /* logo do header */
 .logo img {
-    width: 20%;
+    width: 19%;
     /*usando o % para diminuir seu tamanho*/
 }
 
@@ -64,9 +64,8 @@
 
 .section-01 {
     background: #0a3d54;
-    background: linear-gradient(6deg, rgba(10, 61, 84, 1) 0%, rgba(15, 44, 89, 1) 50%);
     background-image: url(../imagens/artoras.png);
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -85,6 +84,7 @@
 
 
 .div-01 {
+    min-width: 299px;
     background-color: #0F2C59;
     /*cor de fundo da caixa*/
     text-align: center;
@@ -97,6 +97,7 @@
     padding: 1rem;
     height: 16rem;
     width: 25%;
+    font-weight: bold
 }
 
 .ul-div1 a {
@@ -111,7 +112,7 @@
 }
 
 .ul-div1 li {
-    margin: 5px 5px;
+    margin: 7px 7px;
     /*alterando os 4 lados externos do elementos, primeiro valor é superior e inferior e o segundo valor é os laterais esquerda e direita*/
 
 }
@@ -123,24 +124,77 @@
     justify-content: center;
     text-align: center;
     display: flex;
-    gap: 50px;
-    flex-direction: row;
+    gap: 20px;
+    flex-direction: column;
     min-width: 299px;
     padding: 1rem;
     height: 16rem;
     width: 25%;
     background-repeat: no-repeat;
-    background: linear-gradient(90deg, rgba(42, 123, 155, 0.212) 0%, rgba(87, 199, 134, 0.295) 50%, rgba(237, 221, 83, 0.37) 100%), url(../imagens/Dark\ Souls\ Bonfire\ GIF.gif)
+    background: linear-gradient(90deg, rgba(40, 124, 15, 0.1478) 0%, rgba(87, 199, 134, 0.295) 50%, rgba(237, 221, 83, 0.37) 100%), url(../imagens/Dark\ Souls\ Bonfire\ GIF.gif)
 }
 
-.fa-solid,
-.a-gamepad {
-    color: white;
+.div-02 i {
+    color: black;
     font-size: 1.3rem;
     margin-right: 30px;
+    gap: 15px;
 }
 
-.fa-solid:hover , .fa-gamepad:hover{
-    color: red;
+.fa-solid:hover,
+.fa-gamepad:hover {
+    color: #9f111b;
     transition: 0.5s;
+}
+
+
+.img-div {  /*aqui estamos estilizando a tarja em destaque entre as sections*/
+    padding: 3%; /*preenchimento interno*/
+    background-image: url(../imagens/6937560-panoramico-azul-textura-abstrato-grunge-fundo-vetor.jpg);/*caminho da img*/
+    background-position: center; /*posicionameno da textura*/
+    background-size: cover; /*preenchimento total da img*/
+}
+
+
+/*estilizando a segunda section*/
+.section-02 {
+    display: flex; /*tornando as caixas lado a lado*/
+    align-items: center; /*alinhamento vertical*/
+    justify-content: center; /*alinhamento horizontal*/
+    background-color: #292c37; /*cor de fundo da caixa*/
+    gap: 1.5rem; /*brecha entre as caixas*/
+    padding: 5rem; /*preenchimento interno*/
+    flex-wrap: wrap; /*caso necessário você pode quebrar*/
+}
+
+/*estilização das 3 div sec 2*/
+.caixa {
+width: 25%; /*largura da caixa*/
+height: 22rem; /*altura da caixa*/
+background-color:  #cccccc; /*cor de fundo da caixa*/
+min-width: 299px; /*largura minima*/
+font-size: 2rem; /*tamanho das letras*/
+color: black; /*cor das letras */
+box-shadow: 10px 10px 20px  black; /*sombra externa das caixas*/
+cursor: pointer; /*ativando cursor pointer*/
+}
+
+.caixa:hover {
+    box-shadow: 12px 12px 25px  #cccccc; /*sombra externa das caixas*/
+    transition: 0.5s;
+}
+
+
+.section-03 {
+    display: flex; /*tornando as caixas lado a lado*/
+    align-items: center; /*alinhamento vertical*/
+    justify-content: center; /*alinhamento horizontal*/
+    background-color: #292c37; /*cor de fundo da caixa*/
+    gap: 1.5rem; /*brecha entre as caixas*/
+    padding: 5rem; /*preenchimento interno*/
+    flex-wrap: wrap; /*caso necessário você pode quebrar*/
+}
+
+.div-04, .div-03 {
+    height: 15rem;
 }
