@@ -148,53 +148,166 @@
 }
 
 
-.img-div {  /*aqui estamos estilizando a tarja em destaque entre as sections*/
-    padding: 3%; /*preenchimento interno*/
-    background-image: url(../imagens/6937560-panoramico-azul-textura-abstrato-grunge-fundo-vetor.jpg);/*caminho da img*/
-    background-position: center; /*posicionameno da textura*/
-    background-size: cover; /*preenchimento total da img*/
+.img-div {
+    /*aqui estamos estilizando a tarja em destaque entre as sections*/
+    padding: 3%;
+    /*preenchimento interno*/
+    background-image: url(../imagens/6937560-panoramico-azul-textura-abstrato-grunge-fundo-vetor.jpg);
+    /*caminho da img*/
+    background-position: center;
+    /*posicionameno da textura*/
+    background-size: cover;
+    /*preenchimento total da img*/
 }
 
 
 /*estilizando a segunda section*/
 .section-02 {
-    display: flex; /*tornando as caixas lado a lado*/
-    align-items: center; /*alinhamento vertical*/
-    justify-content: center; /*alinhamento horizontal*/
-    background-color: #292c37; /*cor de fundo da caixa*/
-    gap: 1.5rem; /*brecha entre as caixas*/
-    padding: 5rem; /*preenchimento interno*/
-    flex-wrap: wrap; /*caso necessário você pode quebrar*/
+    display: flex;
+    /*tornando as caixas lado a lado*/
+    align-items: center;
+    /*alinhamento vertical*/
+    justify-content: center;
+    /*alinhamento horizontal*/
+    background-color: #292c37;
+    /*cor de fundo da caixa*/
+    gap: 1.5rem;
+    /*brecha entre as caixas*/
+    padding: 5rem;
+    /*preenchimento interno*/
+    flex-wrap: wrap;
+    /*caso necessário você pode quebrar*/
 }
+
+
+
+
 
 /*estilização das 3 div sec 2*/
 .caixa {
-width: 25%; /*largura da caixa*/
-height: 22rem; /*altura da caixa*/
-background-color:  #cccccc; /*cor de fundo da caixa*/
-min-width: 299px; /*largura minima*/
-font-size: 2rem; /*tamanho das letras*/
-color: black; /*cor das letras */
-box-shadow: 10px 10px 20px  black; /*sombra externa das caixas*/
-cursor: pointer; /*ativando cursor pointer*/
+    width: 25%;
+    /*largura da caixa*/
+    height: 22rem;
+    /*altura da caixa*/
+    background-color: #cccccc;
+    /*cor de fundo da caixa*/
+    min-width: 299px;
+    /*largura minima*/
+    font-size: 2rem;
+    /*tamanho das letras*/
+    color: black;
+    /*cor das letras */
+    box-shadow: 10px 10px 20px black;
+    /*sombra externa das caixas*/
+    cursor: pointer;
+    /*ativando cursor pointer*/
 }
 
 .caixa:hover {
-    box-shadow: 12px 12px 25px  #cccccc; /*sombra externa das caixas*/
+    box-shadow: 12px 12px 25px #cccccc;
+    /*sombra externa das caixas*/
     transition: 0.5s;
 }
 
 
 .section-03 {
-    display: flex; /*tornando as caixas lado a lado*/
-    align-items: center; /*alinhamento vertical*/
-    justify-content: center; /*alinhamento horizontal*/
-    background-color: #292c37; /*cor de fundo da caixa*/
-    gap: 1.5rem; /*brecha entre as caixas*/
-    padding: 5rem; /*preenchimento interno*/
-    flex-wrap: wrap; /*caso necessário você pode quebrar*/
+    display: flex;
+    /*tornando as caixas lado a lado*/
+    align-items: center;
+    /*alinhamento vertical*/
+    justify-content: center;
+    /*alinhamento horizontal*/
+    background-color: #292c37;
+    /*cor de fundo da caixa*/
+    gap: 1.5rem;
+    /*brecha entre as caixas*/
+    padding: 5rem;
+    /*preenchimento interno*/
+    flex-wrap: wrap;
+    /*caso necessário você pode quebrar*/
 }
 
-.div-04, .div-03 {
+.div-04,
+.div-03 {
     height: 15rem;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+/* estilização dos textos da primeira caixa */
+.content-text {
+    text-align: start;
+    /*Alinhando os textos ao inicio*/
+    margin: 1rem;
+    /*espaçamento em torno da caixa*/
+}
+
+.icondiv3 i {
+    font-size: 2.5rem;
+    /*tamanho da letra*/
+    margin-top: 1.2rem;
+    /*espaçamento superior*/
+    font-weight: 500;
+    /*peso da fonte/deixando a fonte mais marcada*/
+}
+
+.button-div-04 a button {
+    padding: 0.5rem;
+    background-color: #9f111b;
+    font-weight: 600;
+    margin: 1rem 0;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+
+
+.p-div-03 p {
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.section-04 {
+    display: flex;
+    /*tornando as caixas lado a lado*/
+    align-items: center;
+    /*alinhamento vertical*/
+    justify-content: center;
+    /*alinhamento horizontal*/
+    background-color: #292c37;
+    /*cor de fundo da caixa*/
+    gap: 1.5rem;
+    /*brecha entre as caixas*/
+    padding: 5rem;
+    /*preenchimento interno*/
+    flex-wrap: wrap;
+    /*caso necessário você pode quebrar*/
+    text-align: center;
+    color: white;
+}
+.gif {
+    background-image: url(../imagens/Ragnarok\ Atreus\ GIF\ by\ Santa\ Monica\ Studio.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+
+.gif2 {
+    background-image: url(../imagens/From\ Software\ Announcement\ GIF\ by\ BANDAI\ NAMCO.gif);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.gif3 {
+    background-image: url(../imagens/Bored\ Video\ Game\ GIF\ by\ CAPCOM.gif);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
 }
