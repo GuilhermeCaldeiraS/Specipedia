@@ -83,7 +83,6 @@
 }
 
 
-
 .div-01 {
     min-width: 299px;
     background-color: #0F2C59;
@@ -100,6 +99,11 @@
     width: 25%;
     font-weight: bold
 }
+
+.div-01 p,span {
+margin-bottom: 1.3rem;
+}
+
 
 .ul-div1 a {
     text-decoration: none;
@@ -211,7 +215,15 @@ p {
     background-color: #292c37;
 }
 
+.content-section2 img {
+width: 100%;
+height: 50%;
+}
 
+
+.content-section2 p button{
+    text-align: center;
+}
 
 
 
