@@ -36,7 +36,7 @@
 
 /* logo do header */
 .logo img {
-    width: 19%;
+    width: 13%;
     /*usando o % para diminuir seu tamanho*/
 }
 
@@ -56,6 +56,13 @@
     /*cor de fundo do botão*/
     border: none
         /*remoção das bordas*/
+}
+
+
+@media (max-width: 600px) {
+   .header img{
+    width: 34%;
+   }
 }
 
 /* fim da personalização do header */
@@ -182,7 +189,48 @@ margin-bottom: 1.3rem;
     /*preenchimento interno*/
     flex-wrap: wrap;
     /*caso necessário você pode quebrar*/
+    text-align: center;
 }
+
+.content-section2 button {
+    background-color: black;
+    color: #cccccc;
+    border: #000000;
+    padding: 5px;
+}
+
+.content-section2 p{
+    font-size: 1rem;
+}
+
+
+.gif02{
+    background-image: url(../imagens/Sonic\ Boom\ Fight\ GIF\ by\ Xbox.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.guias {
+    color: #cccccc;
+    font-size: 2rem;
+}
+
+.content-section3 button{
+    background-color: black;
+    color: #cccccc;
+    border: #000000;
+    padding: 5px;
+}
+
+.content-section3 p {
+    font-size: 1.2rem;
+    margin: 0.5rem auto;
+}
+
+
+
+
 
 .caixa img {
     width: 100%;
@@ -283,13 +331,13 @@ height: 50%;
 
 /* estilização dos textos da primeira caixa */
 .content-text {
-    text-align: start;
+    text-align: center;
     /*Alinhando os textos ao inicio*/
-    margin: 1rem;
-    /*espaçamento em torno da caixa*/
+
 }
 
 .icondiv3 i {
+    margin-bottom: 1.2rem;
     font-size: 2.5rem;
     /*tamanho da letra*/
     margin-top: 1.2rem;
@@ -359,6 +407,29 @@ height: 50%;
 }
 
 
+.whatsapp img {
+    width: 50px;
+}
+
+.whatsapp { /*div que guarda o icon whatsapp*/
+    position: fixed; /*posicionamento fixo*/
+    right: 6px; /*posicionado á direita (25px)*/
+    bottom: 230px; /*posicionando á 25px do bottom*/
+}
+
+.whatsapp img:hover{
+width: 60px;
+transition: 0.5s;
+}
+
+
+@media (max-width: 600px) {
+   .whatsapp  {
+    position: fixed;
+    right: 6px;
+ bottom: 285px; /*posicionando á 25px do bottom*/
+   }
+}
 
 /*inicio estilização footer/rodapé*/
 .footer {
