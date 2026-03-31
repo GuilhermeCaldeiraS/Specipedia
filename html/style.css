@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 
 * {
+    text-decoration: none;
     list-style: none;
     font-family: "Lexend", sans-serif;
     margin: 0;
@@ -179,6 +180,38 @@
     /*caso necessário você pode quebrar*/
 }
 
+.caixa img {
+    width: 100%;
+    height: 45%;
+}
+
+.caixa h3,
+p {
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+
+.caixa h3 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.caixa button {
+ 
+    border-radius: 5px;
+    border: none;
+}
+
+
+.caixa button:hover {
+    color: white;
+    transition: 0.5s;
+    background-color: #292c37;
+}
+
+
 
 
 
@@ -287,6 +320,7 @@
     text-align: center;
     color: white;
 }
+
 .gif {
     background-image: url(../imagens/Ragnarok\ Atreus\ GIF\ by\ Santa\ Monica\ Studio.gif);
     background-position: center;
@@ -310,4 +344,84 @@
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
+}
+
+
+
+/*inicio estilização footer/rodapé*/
+.footer {
+    background-color: #000000;
+    /*cor de fundo do footer*/
+    font-size: 1.3rem;
+    /*tamanho das letras no footer*/
+    padding: 2rem;
+    /*preenchimento interno*/
+    text-align: center;
+    /*alinhando os textos no centro*/
+}
+
+.content {
+    display: flex;
+    /*colocando as listas lado a lado*/
+    align-items: center;
+    /*alinhamento vertical*/
+    justify-content: center;
+    /*alinhamento horizontal*/
+    gap: 3rem;
+    /*espaçamento dos elementos*/
+    flex-wrap: wrap;
+    /*Quebra das caixas*/
+    margin-bottom: 1.5rem;
+}
+
+.socialmedia {
+    padding: 1.5rem;
+    /*espaçamento interno*/
+}
+
+.socialmedia i {
+    color: white;
+    /*cor dos icones*/
+    font-size: 2em;
+    /*32px/tamanhos dos icones*/
+    margin: 0.5rem;
+    /*espaçamento de ambos os lados*/
+}
+
+
+/*linha divisória entre as div principais*/
+.line {
+    width: 60%;
+    margin: 0.5rem auto;
+    /*espaçamento em torno da linha superior e inferior (0.5rem) com as laterais automáticas (navegador)*/
+    background-color: #9f111b;
+    /*cor de fundo da borda*/
+    border: none;
+    /*removendo o padrão da borda, possibilitando que trocamos a cor para qual desejarmos*/
+    height: 2px;
+    /*altura da nova linha com cor trocada, sem ela a nova borda com a cor mudada não haverá efeito algum.*/
+}
+
+.div-list ul li a {
+    color: #cccc;
+    /*cor das letras nas ancoras/listas*/
+}
+
+.div-list ul li a:hover {
+    transition: 0.5s;
+    /*tempo de transição do mouse ao passar pelo item*/
+    color: #b11623;
+    /*cor da letra ao mouse/dedo do usuario ser passado por cima do texto*/
+}
+
+
+.div-list ul li {
+    margin-bottom: 0.7rem;
+    /*margem inferior para as listas ficarem um pouco distantes entre si*/
+}
+
+@media (max-width: 600px) {
+    .content {
+        flex-direction: column;
+    }
 }
