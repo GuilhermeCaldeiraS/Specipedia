@@ -144,7 +144,7 @@ margin-bottom: 1.3rem;
     height: 16rem;
     width: 25%;
     background-repeat: no-repeat;
-    background: linear-gradient(90deg, rgba(40, 124, 15, 0.1478) 0%, rgba(87, 199, 134, 0.295) 50%, rgba(237, 221, 83, 0.37) 100%), url(../imagens/Dark\ Souls\ Bonfire\ GIF.gif)
+    background: linear-gradient(90deg, rgba(97, 8, 8, 0.562) 0%, rgba(163, 6, 6, 0.575) 50%, rgba(0, 0, 0, 0) 100%), url(../imagens/Dark\ Souls\ Bonfire\ GIF.gif)
 }
 
 .div-02 i {
